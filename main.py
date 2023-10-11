@@ -28,16 +28,16 @@ num_leds = 55
 # Initialize the WS2812 LED strip
 led_strip = neopixel.NeoPixel(led_strip_pin, num_leds)
 
-OFF = (0, 0, 0)
-ON = (255, 255, 255)
+# LED strip color values
+OFF = (0, 0, 0)  # Nothing
+ON = (255, 255, 255)  # White
 
 
-# Function to control the LED strip based on optocoupler state
 def control_led_strip(optocoupler_state):
     """
-    Take the state value of an Opto-Coupler and set LED strip values accordingly
+    Control the LED strip based on optocoupler state
 
-    :param optocoupler_state: Either True or False
+    :param optocoupler_state: Either True (door open) or False (door closed)
     :type optocoupler_state: bool
     :return: Nothing
     :rtype: None
