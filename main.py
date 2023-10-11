@@ -10,6 +10,10 @@ Truth table:
     ---------       --------------------------      -------------
     Door Open       Unblocked (light detected)      True
     Door Closed     Blocked (no light detected)     False
+
+Tested on:
+    MicroPython v1.21.0 on 2023-10-05; ESP module (1M) with ESP8266
+
 """
 import neopixel
 from machine import Pin
