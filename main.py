@@ -1,6 +1,6 @@
 """
 This is a simple script to turn on a WS2812 LED strip based on the state of
-a slotted opto-coupler.
+a slotted opto-coupler mounted on a door.
 
 Here is the specific model:
 https://www.amazon.com/dp/B08977QFK5?psc=1&ref=ppx_yo2ov_dt_b_product_details
